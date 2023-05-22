@@ -39,3 +39,19 @@
 ├── README.md
 ├── jsconfig.json
 ```
+## 2.构建命令
+
+请选使用环境切换命令，生成 ext.json、manifest.json 文件
+
+- 开发
+  - npm run dev:h5
+  - npm run serve
+- 打包
+  - npm run build:h5
+  - npm run build
+  -
+- 环境切换
+  - npm run switch:dev (开发环境)
+  - npm run switch:cs (测试环境)
+  - npm run switch:pre (预发布环境)
+  - npm run switch:pro (生产环境)
