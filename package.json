@@ -84,6 +84,7 @@
     "cross-env": "^7.0.2",
     "husky": "^8.0.3",
     "jest": "^25.4.0",
+    "lint-staged": "^13.2.2",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
