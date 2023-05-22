@@ -1,6 +1,13 @@
+/*
+ * @Author       : Mx
+ * @Date         : 2023-04-17 15:36:22
+ * @Description  :
+ */
 import Vue from 'vue'
 import App from './App'
 import './uni.promisify.adaptor'
+import uView from 'uview-ui'
+Vue.use(uView)
 
 Vue.config.productionTip = false
 

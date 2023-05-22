@@ -12,6 +12,14 @@ type RequesetParams = {
 }
 export default function request<T>(params: RequesetParams): Promise<T> {
     return new Promise(async (resolve, reject) => {
+        // 清除无用参数
+        // if (params.data) {
+        //     Object.keys(params.data).forEach(key => {
+        //       if (params.data[key] == null || params.data[key] == undefined || params.data[key] === '') {
+        //         delete (params.data[key]);
+        //       }
+        //     })
+        // }
         try {
             const res: any = await uni.request({
                 url: baseUrl + params.url,

@@ -32,8 +32,8 @@ module.exports = {
       }
     ],
     // 关闭组件命名规则
-    "vue/multi-word-component-names":"off",
-    "vue/max-attributes-per-line":"off",
+    'vue/multi-word-component-names': 'off',
+    'vue/max-attributes-per-line': 'off',
     // 这里不错提示，生产环境打包时直接把console.log去掉
     'no-console': 'off',
     'no-empty': 0, // 不允许空作用域

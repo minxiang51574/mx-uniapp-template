@@ -11,7 +11,8 @@
   "easycom": {
     "autoscan": true,
     "custom": {
-      "^k-(.*)": "@/components/$1.vue"
+      "^k-(.*)": "@/components/$1.vue",
+      "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
     }
   },
   "globalStyle": {

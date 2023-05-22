@@ -5,7 +5,8 @@
 -->
 <template>
   <view class="content">
-    <image class="logo" src="/static/logo.png"></image>
+    <u-button text="月落"></u-button>
+    <u-button type="primary" text="确定"></u-button>
     <view>
       <text class="title">{{ title }}</text>
     </view>
@@ -24,7 +25,7 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   .content {
     display: flex;
     flex-direction: column;
