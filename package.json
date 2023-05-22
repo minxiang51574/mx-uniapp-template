@@ -12,7 +12,23 @@
     "switch:dev": "cross-env NODE_ENV=development node env.switch.js",
     "switch:cs": "cross-env NODE_ENV=cs node env.switch.js",
     "switch:pre": "cross-env NODE_ENV=pre node env.switch.js",
-    "switch:pro": "cross-env NODE_ENV=production node env.switch.js"
+    "switch:pro": "cross-env NODE_ENV=production node env.switch.js",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,vue}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.vue": [
+      "stylelint --fix",
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{less,css}": [
+      "stylelint --fix",
+      "prettier --write"
+    ]
   },
   "dependencies": {
     "@dcloudio/uni-app": "^2.0.2-3070920230324001",
@@ -48,6 +64,8 @@
     "vuex": "^3.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@dcloudio/types": "^3.3.2",
     "@dcloudio/uni-automator": "^2.0.2-3070920230324001",
     "@dcloudio/uni-cli-i18n": "^2.0.2-3070920230324001",
@@ -64,6 +82,7 @@
     "@vue/cli-service": "~4.5.9",
     "babel-plugin-import": "^1.11.0",
     "cross-env": "^7.0.2",
+    "husky": "^8.0.3",
     "jest": "^25.4.0",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
