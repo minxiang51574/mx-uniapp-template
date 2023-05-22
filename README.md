@@ -55,3 +55,24 @@
   - npm run switch:cs (测试环境)
   - npm run switch:pre (预发布环境)
   - npm run switch:pro (生产环境)
+
+## 3、git 提交规范
+
+| 类型     | 描述                                                   |
+| -------- | ------------------------------------------------------ |
+| build    | 编译相关的修改，例如发布版本、对项目构建或者依赖的改动 |
+| chore    | 其他修改, 比如改变构建流程、或者增加依赖库、工具等     |
+| ci       | 持续集成修改                                           |
+| docs     | 文档修改                                               |
+| feat     | 新特性、新功能                                         |
+| fix      | 修改 bug                                               |
+| perf     | 优化相关，比如提升性能、体验                           |
+| refactor | 代码重构                                               |
+| revert   | 回滚到上一个版本                                       |
+| style    | 代码格式修改, 注意不是 css 修改                        |
+| test     | 测试用例修改                                           |
+
+//注意 type 与 description 空格
+git commit -m 'feat: 添加 husky'
+git commit -m 'fix(account): 修复 xxx 的 bug'
+git commit -m 'refactor: 重构整个项目'
