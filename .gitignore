@@ -21,3 +21,10 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+#env file
+src/ext.json
+src/manifest.json
+
+# src url
+src/utils/baseUrl.js
