@@ -13,6 +13,7 @@
     "switch:cs": "cross-env NODE_ENV=cs node env.switch.js",
     "switch:pre": "cross-env NODE_ENV=pre node env.switch.js",
     "switch:pro": "cross-env NODE_ENV=production node env.switch.js",
+    "createMenu": "node createMenu.js",
     "prepare": "husky install"
   },
   "lint-staged": {
