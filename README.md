@@ -1,44 +1,55 @@
 <!--
- * @Author       : Mx
- * @Date         : 2023-04-17 15:36:53
- * @Description  : 必读文档
+ * @Author: Mx
+ * @Date: 2022-04-18 10:02:38
+ * @Description: 必读文档
 -->
+
 ## 1.项目整体目录
 
 ```ts
 ├── dist/                   // 打包文件的目录
 ├── src/
+|   ├── @types/             // 声明文件
 |   ├── api/                // api接口地址
-|   ├── assets/             // 静态文件
 |   ├── components/         // 公共组件
+|   |   ├── km-empty                  //empty
+|   |   ├── km-header                 //公共头部
+|   |   └── km-iconfont               //iconfont
+|   |   └── km-loading                //loadin
+|   |   └── u-charts                  //u-charts
 |   ├── pages/              // 页面
-|   ├── packagexxx/         // 分包
-|   |   ├── components
-|   |   └── pages
+|   ├── assets/             // 静态文件
 |   ├── store/              // vuex
 |   |   ├── index.ts
 |   |   └── modules
 |   |       └── app
+|   ├── storePinia/         //pinia
+|   |   ├── index.ts
+|   |   └── modules
+|   |       └── user        //用户信息
+|   ├── styles/             // 样式文件
 |   ├── utils/              // 工具函数
-|   |   ├── request.js          
-|   |   └── baseUrl
 |   ├── App.vue
-|   ├── main.js
+|   ├── main.ts
 |   ├── manifest.json
 |   ├── pages.json          // 页面路径
 |   └── uni.scss
 ├── .eslintignore           // eslint忽略文件
 ├── .eslintrc.js            // eslint配置文件
 ├── .gitignore              // git忽略文件
+├── .npmrc                  // npm配置文件
 ├── .prettierrc             // prettier配置文件
+├── .stylelintignore        // stylelint忽略文件
 ├── .stylelintrc            // stylelint配置文件
 ├── .env.config             // 环境配置
 ├── .env.switch             // 环境切换
 ├── index.html
 ├── package.json
 ├── README.md
-├── jsconfig.json
+├── tsconfig.json
+└── vite.config.ts
 ```
+
 ## 2.构建命令
 
 请选使用环境切换命令，生成 ext.json、manifest.json 文件
@@ -76,3 +87,14 @@
 git commit -m 'feat: 添加 husky'
 git commit -m 'fix(account): 修复 xxx 的 bug'
 git commit -m 'refactor: 重构整个项目'
+
+#### 运行环境
+
+node: >16
+npm: 8.5.0
+
+#### 分支
+
+dev: 开发分支
+master: 生产分支
+mdm: 采用 mind-design-mini 组件的
